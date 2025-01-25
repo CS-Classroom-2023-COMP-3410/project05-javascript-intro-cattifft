@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+#clock {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.controls label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#alarm-container {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.periodic-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, auto); /* Include 10 rows for all periods */
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+
+.element {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.element:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.element.highlighted {
+    background-color: #ffc107;
+    color: black;
+}
+
+.group-highlighted {
+    background-color: #17a2b8 !important;
+    color: white !important;
+}
+
+#element-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#element-info {
+    font-size: 16px;
+    color: #333;
+}

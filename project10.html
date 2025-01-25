@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer</title>
+    <link rel="stylesheet" href="css/styles10.css">
+</head>
+<body>
+    <div class="trainer-container">
+        <h1>Keyboard Trainer</h1>
+        <div class="controls">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start-btn">Start</button>
+        </div>
+        <div id="trainer-display">
+            <div id="text-display"></div>
+            <textarea id="input-box" placeholder="Type here..." disabled></textarea>
+        </div>
+        <div id="results">
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        <button id="restart-btn" style="display: none;">Restart</button>
+    </div>
+    <script src="js/script10.js"></script>
+</body>
+</html>
